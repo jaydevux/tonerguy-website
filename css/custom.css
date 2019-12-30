@@ -1,0 +1,284 @@
+/* ----------------------------------------------------------------
+	Custom CSS
+
+	Add all your Custom Styled CSS here for New Styles or
+	Overwriting Default Theme Styles for Better Handling Updates
+-----------------------------------------------------------------*/
+
+
+
+.hero-headline-slide-1 {
+
+	font-size: 8rem;
+    line-height: 1;
+	text-align: left;
+	font-weight: 800;
+    width: auto;
+    height: auto;
+    position: absolute;
+    top: 175px;
+    text-shadow: 3px 4px 1px rgba(164, 0, 99, 1), 6px 5px 0px rgba(239, 0, 68, 1)!important;
+
+}
+
+.hero-headline-slide-2 {
+
+	font-size: 8rem;
+    line-height: 1;
+	text-align: left;
+	font-weight: 800;
+    width: auto;
+    height: auto;
+    position: absolute;
+	top: 175px;
+	left: -85px;
+    text-shadow: 3px 4px 1px rgba(164, 0, 99, 1), 6px 5px 0px rgba(239, 0, 68, 1)!important;
+
+}
+
+.hero-headline-slide-3 {
+
+	font-size: 7rem;
+    line-height: 1;
+	text-align: left;
+	font-weight: 800;
+    width: auto;
+    height: auto;
+    position: absolute;
+	top: 175px;
+	left: -115px;
+    text-shadow: 3px 4px 1px rgba(164, 0, 99, 1), 6px 5px 0px rgba(239, 0, 68, 1)!important;
+
+}
+
+
+
+.img-toner-hero-slide-1 {
+
+	width: 447px;
+    height: 125px;
+    position: relative;
+    top: 261px;
+
+}
+
+.img-ink-hero-slide-1 {
+
+	width: 536px;
+    height: 403px;
+    position: relative;
+    left: 650px;
+    top: 100px;
+
+}
+
+.img-office-supplies-hero-slide-2 {
+
+	width: 681px;
+    height: 447px;
+    position: relative;
+    top: 105px;
+    left: 662px;
+
+}
+
+.img-printers-hero-slide-3 {
+
+	width: 675px;
+    height: 388px;
+    position: relative;
+    top: 105px;
+    left: 662px;
+
+}
+
+/* ----- | Story-Box | ----- */
+.story-box {
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap;
+	cursor: pointer;
+}
+
+.story-box .story-box-image {
+	width: 70%;
+	height: 500px;
+	z-index: 2;
+	overflow: hidden;
+	-ms-flex-preferred-size: auto;
+	flex-basis: auto;
+}
+
+.story-box .story-box-image img {
+	display: block;
+	height: auto;
+	width: 100%;
+	opacity: 1;
+	transition: opacity .3s ease;
+}
+
+.story-box:hover .story-box-image img {
+	opacity: .9;
+ }
+
+.story-box .story-box-info {
+	box-sizing: border-box;
+	width: 50%;
+	height: 430px;
+	padding: 60px;
+	margin: 35px 0 0 -20%;
+	background: #fff;
+	z-index: 4;
+	box-shadow: 0 10px 45px rgba(0,0,0,.1);
+	transition: all ease-in .3s;
+	-ms-flex-preferred-size: auto;
+	flex-basis: auto;
+}
+
+.story-box.description-left .story-box-info {
+	-ms-flex-order: -1;
+	order: -1;
+	margin: 35px -20% 0 0;
+}
+
+.story-box .story-box-info .story-title {
+	font-family: 'Playfair Display';
+	font-size: 26px;
+	line-height: 1.4;
+	font-weight: 700;
+	letter-spacing: 0;
+	color: #1d2c4c;
+}
+
+.story-box .story-box-info .story-box-content p {
+	font-size: 15px;
+	font-weight: 300;
+	color: #666;
+	line-height: 16px;
+}
+
+.story-box .story-box-info .story-box-content a {
+	font-size: 16px;
+	text-decoration: underline !important;
+}
+
+/* ----- Story-Box Responsive ----- */
+@media (max-width: 991px) {
+
+	.story-box .story-box-image {
+		height: auto;
+		width: 100%;
+		height: 400px;
+		-ms-flex-order: -1;
+		order: -1;
+	}
+
+	.story-box.description-left .story-box-info {
+		-ms-flex-order: -1;
+		order: -1;
+		margin: 35px -20% 0 0;
+	}
+
+	.story-box.description-left .story-box-info { margin: -40px 5% 0; }
+
+	.story-box .story-box-info {
+		max-width: 90%;
+		height: auto;
+		-ms-flex-preferred-size: 90%;
+		flex-basis: 90%;
+		margin: -40px 5% 0;
+	}
+
+	#side-panel-trigger { right: 40px !important; }
+
+	.mobile-side-panel {
+		position: absolute;
+		display: block;
+		top: 26px;
+		font-size: 18px;
+		color: #222;
+		right: 40px;
+		padding: 10px;
+	}
+}
+
+
+@media (max-width: 767px) {
+
+	.story-box.description-left .story-box-info { margin: -100px 5% 0; }
+	.story-box .story-box-info {
+		padding: 35px;
+		text-align: center;
+		margin: -100px 5% 0;
+	}
+	.customers-count { border-right: none }
+}
+
+@media (max-width: 479px) {
+
+	.story-box .story-box-info {
+		width: 100%;
+		padding: 15px;
+		text-align: center;
+		margin: -200px 5% 0;
+	}
+	.story-box.description-left .story-box-info { margin: -200px 5% 0; }
+
+	ul.tab-nav:not(.tab-nav-lg) li a i {display: none;}
+}
+
+
+
+.footer-info {
+
+	font-size: 0.8rem;
+	margin-top: 20px;
+	
+}
+
+.footer-info-box {
+	
+	width: 200px !important;
+	max-width: 200px !important;
+}
+
+.social-box{
+	width: 215px !important;
+	max-width: 215px !important;
+	float: right;
+	margin-left: 165px;
+}
+
+.footer-info p {
+
+	margin: 0;
+	padding: 0;
+} 
+
+
+.fa-check-circle-o {
+
+	font-size: 100px;
+    margin: 20px 0;
+    color: #A40063;
+}
+
+.thank-you {
+    font-size: 52px;
+    text-align: center;
+}
+
+.thank-you-message {
+    font-size: 28px;
+    padding-bottom: 15px;
+    text-align: center;
+}
+
+
+a.linkTerms {
+
+	color: rgba(255,255,255,0.25);
+	text-shadow: 1px 1px 1px rgb(0, 0, 0);
+
+}

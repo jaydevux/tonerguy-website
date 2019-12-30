@@ -1,0 +1,1060 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en-US">
+<head>
+
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="author" content="SemiColonWeb" />
+
+	<!-- Your Stylesheets, Scripts & Title
+	============================================= -->
+    <link rel="icon" href="../favicon.png" type="image/png" sizes="16x16">
+    <link rel="apple-touch-icon" href="../touch-icon-iphone.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="../touch-icon-ipad.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="../touch-icon-iphone-retina.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="../touch-icon-ipad-retina.png">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.0/css/bootstrap-datepicker3.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,400i,700|Raleway:300,400,500,600,700|Crete+Round:400i" rel="stylesheet" type="text/css" />
+	<link rel="stylesheet" href="../css/bootstrap.css" type="text/css" />
+	<link rel="stylesheet" href="../style.css" type="text/css" />
+	<link rel="stylesheet" href="../css/swiper.css" type="text/css" />
+	<link rel="stylesheet" href="../css/dark.css" type="text/css" />
+	<link rel="stylesheet" href="../css/font-icons.css" type="text/css" />
+	<link rel="stylesheet" href="../css/animate.css" type="text/css" />
+    <link rel="stylesheet" href="../css/magnific-popup.css" type="text/css" />
+    <link rel="stylesheet" href="../css/custom.css" type="text/css" />
+    <link rel="stylesheet" href="../css/colors.css" type="text/css" />
+
+    <style type="text/css">
+      .checkbox label, .radio label {
+        display:initial;
+      }
+      .horizontal-list li {
+        display:inline-block;
+        margin-right:25px;
+      }
+      .iradio_flat {
+        display:table-cell!important;
+      }
+    .jf-copyright {
+        display:none!important;
+    }
+    body{
+      background-color: transparent;
+    }
+
+    .jf-form{
+      margin-top: 28px;
+    }
+
+    .jf-form > form{
+      margin-bottom: 32px;
+    }
+
+    .jf-option-box{
+      display: none;
+      margin-left: 8px;
+    }
+
+    .jf-hide{
+      display: none;
+    }
+
+    .jf-disabled {
+        background-color: #eeeeee;
+        opacity: 0.6;
+        pointer-events: none;
+    }
+
+    /*
+    overwrite bootstrap default margin-left, because the <label> doesn't contain the <input> element.
+    */
+    .checkbox input[type=checkbox], .checkbox-inline input[type=checkbox], .radio input[type=radio], .radio-inline input[type=radio] {
+      position: absolute;
+      margin-top: 4px \9;
+      margin-left: 0px;
+    }
+
+    div.form-group{
+      padding: 8px 8px 4px 8px;
+    }
+
+    .mainDescription{
+      margin-bottom: 10px;
+    }
+
+    p.description{
+      margin:0px;
+    }
+
+    .responsive img{
+      width: 100%;
+    }
+
+    p.error, p.validation-error{
+      padding: 5px;
+    }
+
+    p.error{
+      margin-top: 10px;
+      color:#a94442;
+    }
+
+    p.server-error{
+      font-weight: bold;
+    }
+
+    div.thumbnail{
+      position: relative;
+      text-align: center;
+    }
+
+    div.thumbnail.selected p{
+      color: #ffffff;
+    }
+
+    div.thumbnail .glyphicon-ok-circle{
+      position: absolute;
+      top: 16px;
+      left: 16px;
+      color: #ffffff;
+      font-size: 32px;
+    }
+
+    .jf-copyright{color: #888888; display: inline-block; margin: 16px;display:none;}
+
+    .form-group.required .control-label:after {
+        color: #dd0000;
+        content: "*";
+        margin-left: 6px;
+    }
+
+    .submit .btn.disabled, .submit .btn[disabled]{
+      background: transparent;
+      opacity: 0.75;
+    }
+
+    /* for image option with span text */
+    .checkbox label > span, .radio label > span{
+      display: block;
+    }
+
+    .form-group.inline .control-label,
+    .form-group.col-1 .control-label,
+    .form-group.col-2 .control-label,
+    .form-group.col-3 .control-label
+    {
+      display: block;
+    }
+
+    .form-group.inline div.radio,
+    .form-group.inline div.checkbox{
+      display: inline-block;
+    }
+
+    .form-group.col-1 div.radio,
+    .form-group.col-1 div.checkbox{
+      display: block;
+    }
+
+    .form-group.col-2 div.radio,
+    .form-group.col-2 div.checkbox{
+      display: inline-flex;
+      width: 48%;
+    }
+
+    .form-group.col-3 div.radio,
+    .form-group.col-3 div.checkbox{
+      display: inline-flex;
+      width: 30%;
+    }
+
+    .clearfix:after {
+       content: ".";
+       visibility: hidden;
+       display: block;
+       height: 0;
+       clear: both;
+    }
+
+    </style>
+
+
+
+	<link rel="stylesheet" href="../css/responsive.css" type="text/css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Document Title
+	============================================= -->
+	<title>Toner Guy</title>
+
+</head>
+
+<body class="stretched">
+
+	<!-- The Main Wrapper
+	============================================= -->
+	<div id="wrapper" class="clearfix">
+
+		<!-- Header
+		============================================= -->
+		<header id="header" class="full-header dark">
+
+			<div id="header-wrap">
+
+				<div class="container clearfix">
+
+					<div id="primary-menu-trigger"><i class="icon-reorder"></i></div>
+
+					<!-- Logo
+					============================================= -->
+					<div id="logo">
+						<a href="../index.html" class="standard-logo" data-dark-logo="../assets/logo/logo-dark.png"><img src="../images/logo.png" alt="Canvas Logo"></a>
+						<a href="../index.html" class="retina-logo" data-dark-logo="../assets/logo/logo-dark@2x.png"><img src="../images/logo@2x.png" alt="Canvas Logo"></a>
+					</div><!-- #logo end -->
+
+					<!-- Primary Navigation
+					============================================= -->
+					<nav id="primary-menu">
+
+						<ul>
+                <li><a href="../index.html"><div>Home</div></a></li>
+                <li class="current" ><a href="../authorization"><div>Credit Card Authorization</div></a></li>
+                <li><a href="../terms-and-conditions.html"><div>Terms and Conditions</div></a></li>
+                <li ><a href="../contact.html"><div>Contact Us</div></a></li>
+                <!-- <li class="mega-menu"><a href="#"><div>Customer Login</div></a></li>-->
+
+						</ul>
+
+
+					</nav><!-- #primary-menu end -->
+
+				</div>
+
+			</div>
+
+        </header><!-- #header end -->
+
+
+        <!-- Page Title
+		============================================= -->
+		<section id="page-title">
+
+      <div class="container clearfix">
+          <h1>Credit Card Authorization</h1>
+          <span>Please Fill in the Form</span>
+      </div>
+
+    </section><!-- #page-title end -->
+
+
+
+		<!-- Site Content
+		============================================= -->
+
+    <section>
+      <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-md-6">
+                <div class="topmargin"></div>
+                <div class=" jf-form">
+                <form data-licenseKey="" name="jqueryform-55d7d9" id="jqueryform-55d7d9" action='admin.php' method='post' enctype='multipart/form-data' novalidate autocomplete="on">
+                <input type="hidden" name="method" value="validateForm">
+                <input type="hidden" id="serverValidationFields" name="serverValidationFields" value="">
+
+
+
+                <div class="form-group f7 required credidt-cards" data-fid="f7">
+                  <label class="control-label" for="f7">Credit Card Type</label>
+                    <ul class="horizontal-list">
+                      <li>
+                        <div class="radio cards">
+                          <input  id="f7_1" name="f7"  type="radio" value="Amex"
+                          data-rule-required="true"  >
+                          <label  for="f7_1">
+                            Amex
+                          </label>
+                        </div>
+                      </li>
+
+                      <li>
+                        <div class="radio">
+                          <input  id="f7_2" name="f7"  type="radio" value="Discover"  >
+                          <label  for="f7_2">
+                            Discover
+                          </label>
+                        </div>
+                      </li>
+
+                      <li>
+                        <div class="radio">
+                          <input  id="f7_3" name="f7"  type="radio" value="Master Card"  >
+                          <label  for="f7_3">
+                            Master Card
+                          </label>
+                        </div>
+                      </li>
+
+                      <li>
+                          <div class="radio">
+                              <input  id="f7_4" name="f7"  type="radio" value="Visa"  >
+                              <label  for="f7_4">
+                                Visa
+                              </label>
+                            </div>
+                      </li>
+                    </ul>
+                </div>
+
+
+
+
+                <div class="form-group f6 " data-fid="f6">
+                  <label class="control-label sr-only" for="f6">Untitled</label>
+
+                <div class="form-group required">
+                  <label for="ccNumber" class="control-label">Card number</label>
+                  <input id="ccNumber" name="ccNumber" type="tel" class="input-lg form-control ccNumber" maxlength="19" autocomplete="cc-number" placeholder="•••• •••• •••• ••••"
+                    data-rule-ccNumber="true"
+                    required>
+                </div>
+
+                <div class="form-group required">
+                  <label for="ccFullname" class="control-label">Name on card</label>
+                  <input id="ccFullname" name="ccFullname" type="text" class="input-lg form-control ccFullname" autocomplete="ccFullname" required>
+                </div>
+
+                <div class="form-group required">
+                  <label for="ccExpiryDate" class="control-label">Expiration date</label>
+                  <input id="ccExpiryDate" name="ccExpiryDate" type="tel" class="input-lg form-control ccExpiryDate" autocomplete="ccExpiryDate" placeholder="mm/yy"
+                    data-rule-ccExpiry="true"
+                    required>
+                </div>
+
+                <div class="form-group required">
+                  <label for="ccCVC" class="control-label">Card CVC</label>
+                  <input id="ccCVC" name="ccCVC" type="tel" class="input-lg form-control ccCVC" autocomplete="off" maxlength="4" placeholder="•••"
+                    data-rule-ccCvc="true"
+                    required>
+                </div>
+
+
+                </div>
+
+
+
+
+                <div class="form-group gaddress f8 required" data-fid="f8">
+                    <label class="control-label">Credit Card Billing Address
+                      </label>
+
+                    <div class="form-group addressLine1">
+                        <label class="control-label sr-only" for="f8_addressLine1">Address Line1</label>
+                        <input type="text" class="form-control gaddress-autocomplete" data-gaddress-types="street_number route" data-gaddress-name="long_name" id="f8_addressLine1" name="f8_addressLine1" value=""  aria-describedby="f8_addressLine1-help-block" placeholder="1234 Main St."
+                    data-rule-required="true" data-msg-required="This field is required."  />
+                        <p id="f8_addressLine1-help-block" class="description sr-only">Street address, P.O. box, company name, c/o</p>
+                    </div>
+
+
+                    <div class="form-group city">
+                        <label class="control-label sr-only" for="f8_city">City</label>
+                        <input type="text" class="form-control" data-gaddress-types="locality" data-gaddress-name="long_name"  id="f8_city" name="f8_city" value=""  aria-describedby="f8_city-help-block" placeholder="City"
+                    data-rule-required="true" data-msg-required="This field is required."  />
+                        <p id="f8_city-help-block" class="description sr-only">City</p>
+                    </div>
+
+                    <div class="form-group state">
+                        <label class="control-label sr-only" for="f8_state">State / Province / Region</label>
+                        <input type="text" class="form-control" data-gaddress-types="administrative_area_level_1" data-gaddress-name="long_name"  id="f8_state" name="f8_state" value=""  aria-describedby="f8_state-help-block" placeholder="State / Province / Region"
+                    data-rule-required="true" data-msg-required="This field is required."   />
+                        <p id="f8_state-help-block" class="description sr-only">State / Province / Region</p>
+                    </div>
+
+                    <div class="form-group postalCode">
+                        <label class="control-label sr-only" for="f8_postalCode">Zip Code</label>
+                        <input type="text" class="form-control" data-gaddress-types="postal_code" data-gaddress-name="long_name" id="f8_postalCode" name="f8_postalCode" value=""  aria-describedby="f8_postalCode-help-block" placeholder="Postal / Zip Code"
+                    />
+                        <p id="f8_postalCode-help-block" class="description sr-only">Zip Code</p>
+                    </div>
+
+                    <div class="form-group country">
+                        <label class="control-label sr-only" for="f8_country">Country</label>
+                        <input type="text" class="form-control" data-gaddress-types="country" data-gaddress-name="long_name" id="f8_country" name="f8_country" value=""  aria-describedby="f8_country-help-block" placeholder="Country"
+                    data-rule-required="true" data-msg-required="This field is required."  />
+                        <p id="f8_country-help-block" class="description sr-only">Country</p>
+                    </div>
+
+                    <div class='mq-indicator'></div>
+
+                </div>
+
+
+
+
+                <div class="form-group f1 required" data-fid="f1">
+                  <label class="control-label" for="f1">Customer or Business Name</label>
+
+
+                <input type="text" class="form-control" id="f1" name="f1" value=""
+                    data-rule-required="true"  />
+
+
+
+                </div>
+
+
+
+
+                <div class="form-group f9 required" data-fid="f9">
+                  <label class="control-label" for="f9">Complete Address</label>
+
+
+                <input type="text" class="form-control" id="f9" name="f9" value=""
+                    data-rule-required="true"  />
+
+
+
+                </div>
+
+
+
+
+                <div class="form-group f10 required" data-fid="f10">
+                  <label class="control-label" for="f10">Phone</label>
+
+
+                <input type="tel" class="form-control" id="f10" name="f10" value=""   placeholder="xxx-xxx-xxxx"
+                    data-rule-pattern="[0-9]{3,4}[ -.]*[0-9]{3,4}[ -.]*[0-9]{4}" data-msg-pattern="Invalid phone number"
+                    data-rule-required="true"   />
+
+
+                </div>
+
+
+
+
+                <div class="form-group f11 " data-fid="f11">
+                  <label class="control-label" for="f11">Fax</label>
+
+
+                <input type="tel" class="form-control" id="f11" name="f11" value=""   placeholder="xxx-xxx-xxxx"
+                    data-rule-pattern="[0-9]{3,4}[ -.]*[0-9]{3,4}[ -.]*[0-9]{4}" data-msg-pattern="Invalid phone number"    />
+
+
+                </div>
+
+
+
+
+                <div class="form-group f2 required" data-fid="f2">
+                  <label class="control-label" for="f2">Email</label>
+
+
+                <input type="email" class="form-control" id="f2" name="f2" value=""
+                    data-rule-email="true"
+                    data-rule-required="true"  />
+
+
+                </div>
+
+
+
+
+                <div class="form-group f12 required" data-fid="f12">
+                  <label class="control-label sr-only" for="f12">Authorization</label>
+
+                <div class="checkbox">
+                    <input  id="f12_1" name="f12[]"  type="checkbox" value="I hereby authorize Toner Guy to charge:"
+                    data-rule-required="true">
+                    <label  for="f12_1">
+                      I hereby authorize Toner Guy to charge
+                    </label>
+                  </div>
+
+
+                </div>
+
+
+
+
+                <div class="form-group f13 required" data-fid="f13">
+                  <label class="control-label" for="f13">Amount($)</label>
+
+
+                <input type="text" class="form-control " id="f13" name="f13" value=""
+                    data-rule-number="true"
+                    data-rule-required="true"   />
+
+
+                </div>
+
+
+
+
+                <div class="form-group f14 required" data-fid="f14">
+                  <label class="control-label" for="f14">To my credit card for payment of sales order# or Invoice #</label>
+
+
+                <input type="text" class="form-control" id="f14" name="f14" value=""
+                    data-rule-required="true"  />
+
+
+
+                </div>
+
+
+
+
+                <div class="form-group f16 required" data-fid="f16">
+                  <label class="control-label" for="f16">Date</label>
+
+                <div class="input-group date">
+                <input type="text" class="form-control datepicker" id="f16" name="f16" value=""
+                    data-rule-required="true"   />
+                <span class="input-group-addon right"><i class="glyphicon glyphicon-th"></i> </span></div>
+
+                </div>
+
+
+                <div class="form-group">
+                  <h5><strong>Credit Agreement Terms and Conditions</strong> <span style="color: #dd0000">*</span></h5>
+                  <div style="max-height:250px;overflow:scroll;border:solid thin grey; padding:10px;" onscroll="scrolling(this);">
+                                        <p>
+                                          **ORDERING**<br/><br/>
+ Orders are picked and shipped immediately on the date placed, when placed within normal operating hours and stock is
+ available. We are unable to accommodate cancellation requests for this reason all orders canceled after shipping will be subject
+ to a 15% restocking fee and freight charges. We can offer an appropriate line of credit to any party deemed a qualified dealer,
+ with current financial information, subject to credit approval. Terms are Net 30 from date of Toner Guy Inc. invoice.
+ **PRODUCT RETURN**<br/><br/>
+ Every effort is made to fill your orders swiftly and accurately. We understand the occasional need to return items to our facility
+ or direct to the manufacturer for reasons of defective merchandise, ordering errors, freight damage or selection errors. A
+ Return Authorization (RA) must be obtained from your sales representative or our customer service department. Product
+ returned without a Return Authorization will not be credited. All returns must be requested within five (5) days of product
+ receipt and expire thirty days (30) from issuance. Product must be received in our warehouse prior to the RA expiration date.
+ The RA and box count must be included on each shipping label. Do not write anything, including RA numbers or box counts, on
+ manufacturer carton or packaging. Products must be returned in the original manufacturer packaging with all its contents and
+ original packaging material, free of any markings on the cartons. Any Toner Guy Inc. shipping error must be reported when the
+ goods are received; call tags will be issued for their return. A 15% Restocking fee will apply to all non-defective returns. Invoiced
+ freight will only be credited in the event of Toner Guy Inc. error.<br/><br/>
+ **DEFECTIVE PRODUCTS**<br/><br/>
+ Please follow the steps under Product Return, and note the following information pertinent to defective merchandise.
+ Defective merchandise will be tested. If no defect is found a 15% restocking fee will be charged. All defective merchandise must
+ be returned to us within 30 Days of the Toner Guy Inc. invoice date *no exceptions*after this period all products are
+ guaranteed by the respective manufacturers. All cartridge copier returns must be accompanied with a letter from an authorized
+ service technician or the manufacturer describing the defect. Credit will not be issued for empty cartridges or significantly used
+ cartridges. Call tags will not be issued for defective returns or ordering errors; dealer is responsible for all freight charges.
+ **FREIGHT DAMAGE**<br/><br/>
+ The end user is solely responsible for the carton count on truck shipments; any damage or shortage must be noted on the
+ delivery receipt and a claim must be filed with the carrier. Claims made after delivery will not be honored. Carrier must be
+ notified of any damage to product or shipping cartons at point of receipt, and claim must be filed with the carrier. ALL original
+ cartons and packaging must be kept with the damaged product for carrier inspection.
+ **NON-RETURNABLE ITEMS**<br/><br/>
+ 1) Closeout items<br/>
+ 2) Bottled copier supplies<br/>
+ 3) Any toner significantly used or not in original packaging<br/>
+ 4) OEM cartons in unsalable condition Credit will not be issued for any of these items.<br/>
+ **LATE PAYMENT FEE**<br/><br/>
+ Purchaser understands that failure to pay the invoice when due will result in damages to Toner Guy Inc. for the lost time value
+ of the overdue payment plus interminable increased administrative costs of handling the delinquent account. Purchaser hereby
+ agrees to pay a late charge for any overdue balance due to Toner Guy Inc. computed at the rate of one-and-one-half (1.5%)
+ percent per month for the period said balance or any part thereof is overdue. Late charge shall be added to any overdue
+ balance.
+                                        </p>
+                                        </div>
+
+                  </div>
+
+                  <div class="form-group f7992  required" data-fid="f7992">
+
+
+                                        <input type="checkbox" id="agree" name="f7992" onchange="readornot(event);" required=""" style="display:inline-block!important;"><span style="font-weight:bold;">&nbsp;&nbsp;I have read and agree to the Terms and Conditions.</span>
+
+
+
+                                        </div>
+
+                <div class="form-group f15 required " data-fid="f15">
+                  <label class="control-label" for="f15">Signature</label>
+                  <p> By typing your Name below you authorize us to charge your Credit Card</p>
+                 
+                <!-- <canvas class="signature" data-signatureid="f15" width="310" height="120"></canvas>
+                <button type="button" class='clearCavans' class="btn btn-default btn-sm">Clear</button>
+                <input type="text" class="canvasData" value="" id="f15" name="f15"
+                    data-rule-required="true"  > -->
+                <input type="text" class="form-control" value="" id="f15" name="f15"
+                    data-rule-required="true"  >
+
+
+
+                </div>
+
+
+
+
+
+                <div class='form-group recaptcha'>
+                  <script type="text/javascript">
+                    function renderReCaptcha(){
+                      var jfKey = '6LdopwYTAAAAABunoQoWr5mZGVpVSmTFumNM8ZfO', // when form loaded from jqueryform.com
+                      realKey = '6LfZQpgUAAAAANVdxijIDV0Jxn906ROgKqM6slzO',
+                      theme = 'light',
+                      key = -1 !== location.href.indexOf('jqueryform.com/') ? jfKey : realKey;
+                      grecaptcha.render( document.getElementById('g-recaptcha'), {
+                          'sitekey' : key,
+                          'theme' : theme
+                        });
+                    };
+                  </script>
+                  <script src="https://www.google.com/recaptcha/api.js?hl=&onload=renderReCaptcha&render=explicit" async defer></script>
+                  <div id='g-recaptcha' class='g-recaptcha col_field' data-theme='light' data-sitekey='6LfZQpgUAAAAANVdxijIDV0Jxn906ROgKqM6slzO'></div>
+                </div>
+
+
+                <div class="form-group submit f0 " data-fid="f0" style="position: relative;">
+                  <label class="control-label sr-only" for="f0" style="display: block;">Submit Button</label>
+
+                  <div class="progress" style="display: none; z-index: -1; position: absolute;">
+                    <div class="progress-bar progress-bar-striped active" role="progressbar" style="width:100%">
+                    </div>
+                  </div>
+
+                  <button type="submit" class="btn btn-primary btn-lg" style="z-index: 1;">
+                      Submit
+                  </button>
+
+                </div><div class="clearfix"></div>
+
+                <div class="submit">
+                  <p id="formstatus" class="error bg-warning" style="display:none;">
+                    Please check the required fields.  </p>
+                </div>
+
+                <div class="clearfix"></div>
+
+
+                </form>
+
+
+                <div class="container jf-thankyou" style="display:none;" data-redirect="thank-you.html" data-seconds="">
+                  <h3>Your form has been submitted. Thank You!</h3>
+                </div>
+<!-- ----------------------------------------------- -->
+            </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SITE CONTENT ENDS -->
+
+
+<!-- Footer
+		============================================= -->
+		<footer id="footer" class="dark">
+
+        <div class="container">
+                  <div class="row topmargin-sm nobottommargin">
+                          <div class="col-md-3">
+                                  <img src="../assets/logo/logo-dark@2x.png" alt="">
+                              </div>
+              
+                              <div class="col-md-3 footer-info footer-info-box clearfix">
+                                      <p style="color: #A91570;">Headquartes</p>
+                                      <p>7665 Mentor Ave, Suite 328</p>
+                                      <p>Mentor, OH 44060</p>
+                              </div>
+              
+                              <div class="col-md-3 footer-info clearfix">
+                                  <p><br></p>
+                                  <p>Phone: 440-789-4075</p>
+                                   <!-- <p>Fax: 716-462-5370</p> -->
+                                  <p><a href="mailto:sales@tonerguy.com">sales@tonerguy.com</a></p>
+                              </div>
+  
+                              <div class="col-md-3 social-box clearfix">
+                                      <p style="color:#A91570; margin:10px 0 5px 0; font-size: 0.8rem">Follow us</p>
+                                      <a href="#" class="social-icon si-colored si-facebook"><i class="icon-facebook"></i><i class="icon-facebook"></i></a>
+                                      <a href="#" class="social-icon si-colored si-instagram"><i class="icon-instagram"></i><i class="icon-instagram"></i></a>
+                                      <a href="#" class="social-icon si-colored si-twitter"><i class="icon-twitter"></i><i class="icon-twitter"></i></a>
+                                      <a href="#" class="social-icon si-colored si-linkedin"><i class="icon-linkedin"></i><i class="icon-linkedin"></i></a>
+                              </div>
+                          </div>
+  
+                  </div>
+          
+  
+       <!-- Copyrights
+			============================================= -->
+			<div id="copyrights" class="notopmargin" style="padding-top:0;">
+
+          <div class="container clearfix">
+
+                      <div class="divider divider-center"><a href="#" data-scrollto="#header"><i class="icon-chevron-up"></i></a></div>
+                      <div class="cleafix center">
+                              <div><a href="../terms-and-conditions.html" class="linkTerms">Terms of Use / Privacy Policy</a></div>
+                              <div>Copyrights © 2019 All Rights Reserved by Tonerguy.com</div>
+                              
+                      </div>
+          </div>
+      </div>
+  
+    </footer>
+
+    </div><!-- #wrapper end -->
+
+	<!-- External JavaScripts
+	============================================= -->
+	<script src="../js/jquery.js"></script>
+	<script src="../js/plugins.js"></script>
+
+	<!-- Footer Scripts
+	============================================= -->
+	<script src="../js/functions.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.0/js/bootstrap-datepicker.min.js"></script>
+  <script src="https://ajax.aspnetcdn.com/ajax/jquery.validate/1.13.1/jquery.validate.min.js"></script>
+  <script src="https://ajax.aspnetcdn.com/ajax/jquery.validate/1.13.1/additional-methods.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-scrollTo/2.1.0/jquery.scrollTo.min.js"></script>
+  <script src="vendor.js" ></script>
+
+  <script src="jqueryform.com.min.js?ver=v2.1.3&id=jqueryform-55d7d9" ></script>
+
+
+
+
+  <!-- [ Start: iCheck support ] ---------------------------------- -->
+  <link href="https://cdn.jsdelivr.net/icheck/1.0.2/skins/flat/_all.min.css" rel="stylesheet">
+  <style type="text/css">
+  /* overwrite bootstrap styles */
+  .checkbox input[type=checkbox], .checkbox-inline input[type=checkbox], .radio input[type=radio], .radio-inline input[type=radio] {
+      position: relative;
+      margin-top: 0px;
+      margin-left: 2px;
+  }
+
+  .checkbox label, .radio label {
+     padding-left: 4px;
+     float: inherit;
+  }
+
+  </style>
+
+  <!-- <script src="https://cdn.jsdelivr.net/icheck/1.0.2/icheck.min.js"></script> -->
+  <script type="text/javascript">
+
+
+  ;(function ($, undefined)
+  {
+
+  var checkers = '.icheckbox_flat, .iradio_flat';
+
+  function initICheck( $input ){
+    $input.iCheck({
+  	    checkboxClass: 'icheckbox_flat',
+  	    radioClass: 'iradio_flat'
+    }).on('ifClicked', function(e){
+      setTimeout( function(){
+        $(e.target).valid();
+        $(e.target).trigger('change').trigger('handleOptionBox');
+      }, 250);
+    });
+  }; // func
+
+  //$('.jf-form .checkbox, .jf-form .radio')
+  $('.jf-form input[type="checkbox"], .jf-form input[type="radio"]').each( function( i, e ){
+      var $input = $(e), $div = $input.closest('.checkbox,.radio'), hasImg = $div.find('label > img').length;
+      if( hasImg ){
+
+          $input.css({ 'opacity': '0', 'position': 'absolute', 'left': '-1000px', 'right': '-1000px'} );
+
+      }else{
+
+          initICheck( $input );
+
+          // IE11 and under, the table-cell makes the checkboxes/radio buttons not clickable
+          var isWin = navigator.platform.indexOf('Win') > -1,
+              isEdge = navigator.userAgent.indexOf('Edge/') > -1,
+              noTableCell = isWin && !isEdge;
+          if( !noTableCell ){
+            $div.find('label').css( { display: 'table-cell' } );
+            $(checkers).css( { display: 'table-cell' } );
+          };
+
+      };
+  });
+
+  })(jQuery);
+
+  </script>
+  <!-- [ End: iCheck support ] ---------------------------------- -->
+
+
+  <!-- include stripe payment plugin -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.payment/1.3.2/jquery.payment.min.js"></script>
+  <script type="text/javascript">
+  	jQuery.validator.addMethod("ccNumber", function(value, element) {
+  	  return $.payment.validateCardNumber(value);
+  	}, "Invalid credit card number");
+
+  	jQuery.validator.addMethod("ccExpiry", function(value, element) {
+  	  var ex = $.payment.cardExpiryVal(value);
+  	  return $.payment.validateCardExpiry(ex.month, ex.year);
+  	}, "Invalid expiration date");
+
+  	jQuery.validator.addMethod("ccCvc", function(value, element) {
+  	  return $.payment.validateCardCVC(value);
+  	}, "Invalid CVC code");
+
+  	// format fields
+  	$('input.ccNumber').payment('formatCardNumber');
+  	$('input.ccExpiryDate').payment('formatCardExpiry');
+  	$('input.ccCVC').payment('formatCardCVC');
+  </script>
+
+
+
+  <style>
+  .gaddress .form-group {
+    padding-left: 0px;
+  }
+
+  .gaddress .mq-indicator{
+    display:none;
+  }
+
+  @media only screen and (min-width : 767px) {
+      .gaddress .mq-indicator{
+        display:block;
+        height:1px;
+        margin-top: -19px;
+      }
+
+      .gaddress .form-group.city,
+      .gaddress .form-group.state,
+      .gaddress .form-group.postalCode,
+      .gaddress .form-group.country
+      {
+          display: inline-block;
+          width: 48%;
+          vertical-align: top;
+      }
+
+  }
+  </style>
+
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAjfX9doMkCnnKnoMy84urezq5YkVphUuA&libraries=places"></script>
+
+  <script type="text/javascript">
+  ;(function ($, undefined)
+  {
+
+
+
+  var alignRight = function(){
+
+      var docW = $(document).width();
+
+      $('.gaddress').each( function(){
+
+          var $fields = $(this).find('.city,.state,.postalCode,.country'), idx = 0, w = 0;
+          $fields.each( function(i, e){
+              w = parseInt( $(e).width() );
+              if( 1 == idx % 2 && docW >= 768 ){
+                  $(e).css( { float: 'right' } );
+              }else{
+                  $(e).css( { float: 'none' } );
+              };
+              idx ++;
+          }); // each
+
+      }); // each
+
+  }; // alignRight
+
+  alignRight();
+  $(window).resize( alignRight );
+
+
+
+  // $input is a jQuery input object
+  var gaComplete = function( $input ){
+    var autocomplete,
+
+
+    initAutocomplete = function () {
+      $input.focus( geolocate );
+      var options = {
+
+          types: ['address']
+      };
+      autocomplete = new google.maps.places.Autocomplete(
+          $input.get(0),
+          options
+      );
+      autocomplete.addListener('place_changed', fillInAddress);
+    }, // initAutocomplete
+
+
+    fillInAddress = function () {
+      // Get the place details from the autocomplete object.
+      var place = autocomplete.getPlace();
+      $input.closest('.gaddress').find('[data-gaddress-types]').each( function(){
+
+        var $t = $(this),
+        types  = $t.data('gaddress-types').replace(/\s+/g,' '),
+        orType = types.indexOf(',') !== -1 ,
+        types  = types.split( orType ? ',' : ' ' ),
+        name   = $t.data('gaddress-name'),
+        values = [];
+
+        if(  !(name == 'long_name' || name == 'short_name') ){
+          name = 'long_name';
+        };
+
+        for (var i = 0; i < place.address_components.length; i++) {
+          var address = place.address_components[i];
+
+          for (var j = 0; j < types.length; j++) {
+            if( -1 !== $.inArray( types[j], address.types ) ){
+              values.push( address[ name ] );
+              if( orType ) break; // found one of the defined types
+            };
+          }; // for j
+
+          if( orType ) break; // found one of the defined types
+        };// for i
+
+        $t.val( values.join(' ') ).valid();
+
+      });
+    }, // fillInAddress
+
+
+    geolocate = function () {
+      if (!navigator.geolocation)
+        return;
+
+      navigator.geolocation.getCurrentPosition(function(position) {
+        var geolocation = {
+          lat: position.coords.latitude,
+          lng: position.coords.longitude
+        };
+        var circle = new google.maps.Circle({
+          center: geolocation,
+          radius: position.coords.accuracy
+        });
+        autocomplete.setBounds(circle.getBounds());
+      });
+
+    };
+
+    // main
+    initAutocomplete();
+
+  };
+
+
+  init = function (){
+    $('input.gaddress-autocomplete').each( function(){
+      gaComplete( $(this) );
+    });
+  };
+
+
+  $.fn.gaddress = function (method)
+  {
+      if ($.fn.gaddress[method])
+      {
+          return $.fn.gaddress[method].apply(this, Array.prototype.slice.call(arguments, 1));
+      }
+      else if (typeof method === "object" || !method)
+      {
+          return initialize.apply(this, arguments);
+      }
+      else
+      {
+          $.error("Method " + method + " does not exist on jQuery.gaddress");
+      }
+  };
+
+  $.fn.gaddress.init = init;
+
+  })(jQuery);
+
+  $(document).gaddress('init');
+  </script>
+
+
+  <style type="text/css">
+  canvas.signature {
+  	border: 2px solid #cccccc;
+  	display: block;
+  }
+  canvas.signature ~ input.canvasData{
+    opacity: 0;
+  }
+  </style>
+
+  <script type="text/javascript">
+
+    // $('canvas.signature').each( function() {
+    //   var $t = $(this), $s = $t.sketch(), S = $s.data('sketch'), $image = $('#'+$t.data('signatureid')), dirty = false;
+    //   $t.data( 'signatureblank', S.el.toDataURL() );
+    //
+    //   S.canvas.on('mouseup touchmove touchend touchcancel', function(){
+    //     dirty = true;
+    //   });
+    //
+    //   $s.next('.clearCavans').click( function(){
+    //     S.context.clearRect(0, 0, S.canvas.width(), S.canvas.height());
+    //     S.actions.length = 0;
+    //     $image.val('');
+    //     $image.valid();
+    //     dirty = false;
+    //   });
+    //
+    //   // watch update on the signature
+    //   setInterval( function(){
+    //     if( !dirty ){
+    //       return;
+    //     };
+    //
+    //     // blank signature?
+    //     var imgdataNew = S.el.toDataURL();
+    //     if( $t.data( 'signatureblank') == imgdataNew ){
+    //       $image.val('blank');
+    //       return;
+    //     };
+    //
+    //     $image.val( '<img src="' + imgdataNew + '">' );
+    //     $image.valid();
+    //     dirty = false;
+    //   },350);
+    //
+    // });
+
+  </script>
+  <script type="text/javascript">
+    var read=0;
+  	// start jqueryform initialization
+  	// --------------------------------
+  	JF.init('#jqueryform-55d7d9');
+  	setInterval(function(){
+  	    if(document.getElementById('formstatus').innerText=='Thank You!') location.assign('thank-you.html');
+  	     }, 500);
+
+         function scrolling(element) {
+        if (element.scrollHeight - element.scrollTop === element.clientHeight)
+        {
+        read=1;
+        }
+          }
+          function readornot(event) {
+            if(read==0) {
+              document.getElementById('agree').checked=false;
+              alert('Please read the terms and conditions');
+            }
+          }
+
+  </script>
+
+</body>
+</html>
